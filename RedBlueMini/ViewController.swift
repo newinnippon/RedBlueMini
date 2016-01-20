@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Redmini: UIImageView!
+    
+    @IBOutlet weak var Bluemini: UIImageView!
+    
+    @IBOutlet weak var redbutton: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +28,16 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func Redbutton(sender: AnyObject) {
+        Redmini.hidden = false
+        Bluemini.hidden = true
+        
+    }
+
+    @IBAction func Bluebutton(sender: AnyObject) {
+        Redmini.hidden = true
+        Bluemini.hidden = false
+    }
+    
 }
 
